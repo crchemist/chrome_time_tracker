@@ -28,7 +28,7 @@ String.prototype.toHHMM = function () {
 function startTimer() {
     console.log('Start timer: ' + timer_id);
     if (timer_id === undefined) {
-        timer_id = window.setInterval('time()', 10000);
+        timer_id = window.setInterval('time()', 2000);
     }
 }
 
