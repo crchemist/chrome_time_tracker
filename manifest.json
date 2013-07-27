@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Time Logger",
+  "version": "0.0.1",
+  "description": "Show where time was wasted :)",
+  "permissions": [
+      "tabs",
+      "storage"
+  ],
+  "icons": { "48": "clock48.png",
+             "128": "clock128.png"},
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*","ftp://*/*"],
+      "js": ["moment.min.js", "clock.js"]
+    }
+  ]
+}
